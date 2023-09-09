@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap');
+
+* {
+    --roboto: 'Roboto', sans-serif;
+    --playfair: 'Playfair Display', serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(170deg, lightblue 30%, white 20%) no-repeat;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+    align-items: center;
+    padding: 1rem;
+}
+
+.image-holder {
+    background-image: url(./imgs/profile.JPG);
+    height: 40vh;
+    max-width: 50vw;
+    min-width: min-content;
+    padding: 1rem;
+    display: flex;
+    align-items: flex-end;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 3px 3px 3px gray;
+}
+
+.name {
+    font-size: 2.5em;
+    color: white;
+    font-weight: bolder;
+    font-family: var(--playfair);
+    text-shadow: 1px 1px 1px black;
+}
+
+
+.about-me {
+    padding: 1rem;
+    background-color: white;
+    height: 60%;
+    font-family: var(--playfair);
+    max-width: 20vw;
+    height: fit-content;
+    box-shadow: 3px 3px 3px gray;
+}
+
+.links-one {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+    /* margin-right: 3px; */
+}
+
+.links-one img {
+    height: 4vh;
+}
+
+/* Main */
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+.card {
+    background-color: orange;
+    width: min-content;
+}
+
+
+
+/* tablet */
+
+@media (max-width: 1000px) {
+    .about-me {
+        max-width: 50vw;
+    }
+}
+
+
+/* phone */
+@media (max-width: 600px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .about-me {
+        max-width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: none;
+        padding: 5px;
+    }
+}
