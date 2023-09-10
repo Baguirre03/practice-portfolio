@@ -157,7 +157,63 @@ main h1 {
 
 footer {
     background-color: lightblue;
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    padding: 1rem;
+    font-family: var(--playfair);
 }
+
+.second-photo {
+    background-image: url(./imgs/second-photo.jpg);
+    background-position: center;
+    height: 50vh;
+    width: 30vw;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.images {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.images button {
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.images svg {
+    height: 4vh;
+    width: 4vw;
+}
+
+.links {
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.links img {
+    height: 4vh;
+    width: 4vw;
+}
+
+button {
+    background-color: lightblue;
+    outline: none;
+    border: none;
+    padding: 0;
+}
+
 
 /* tablet */
 
