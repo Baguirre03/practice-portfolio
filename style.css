@@ -162,6 +162,7 @@ footer {
     gap: 1rem;
     padding: 1rem;
     font-family: var(--playfair);
+    font-size: large;
 }
 
 .second-photo {
@@ -199,7 +200,6 @@ footer {
 .links {
     display: flex;
     align-items: flex-start;
-    gap: 5px;
 }
 
 .links img {
@@ -214,6 +214,9 @@ button {
     padding: 0;
 }
 
+.phone, .mail {
+    font-size: 1.2rem;
+}
 
 /* tablet */
 
@@ -279,5 +282,27 @@ button {
         box-shadow: none;
         padding: 5px;
         gap: 10px;
+    }
+
+    footer {
+        flex-direction: column;        
+    }
+
+    .second-photo {
+        width: 100%;
+    }
+
+    .links {
+        gap: 4px;
+    }
+
+    .links button {
+        height: 8vh;
+        width: 8vw;
+    }
+
+    .links img, .links svg {
+        height: max-content;
+        width: max-content;
     }
 }
