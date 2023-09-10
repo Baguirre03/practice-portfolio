@@ -56,11 +56,19 @@ body {
     display: flex;
     justify-content: flex-end;
     gap: 5px;
-    /* margin-right: 3px; */
+    margin-right: 20px;
 }
 
 .links-one img {
     height: 4vh;
+}
+
+picture {
+    display: none;
+}
+
+.tablet-picture {
+    display: none;
 }
 
 /* Main */
@@ -69,11 +77,12 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 1rem;
 }
 
 .projects {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
 }
 .card {
@@ -81,19 +90,52 @@ main {
     width: min-content;
 }
 
+/* footer */
 
+footer {
+    background-color: lightblue;
+}
 
 /* tablet */
 
 @media (max-width: 1000px) {
+    .image-holder {
+        display: none;
+    }
     .about-me {
-        max-width: 50vw;
+        display: flex;
+        min-width: min-content;
+        flex-wrap: wrap;
+    }
+
+    .about {
+        flex-wrap: wrap;
+    }
+
+    picture {
+        display: block;
+        height: min-content;
+
+    }
+
+    .tablet-picture {
+        display: block;
+        position: relative;
+        width: min-content;
+        /* transform: translate(-100px, 100px); */
+        height: 40vh;
     }
 }
 
 
 /* phone */
 @media (max-width: 600px) {
+    .image-holder {
+        display: flex;
+    }
+    .tablet-picture {
+        display: none;
+    }
     .content {
         flex-direction: column;
     }
@@ -106,5 +148,6 @@ main {
         align-items: center;
         box-shadow: none;
         padding: 5px;
+        gap: 10px;
     }
 }
