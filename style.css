@@ -214,6 +214,10 @@ button {
     padding: 0;
 }
 
+.links img:hover {
+    cursor: pointer;
+}
+
 .phone, .mail {
     font-size: 1.2rem;
 }
